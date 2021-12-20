@@ -29,6 +29,7 @@ struct NewFeedListRow: View {
                 }
                 .clipShape(Circle())
                 .frame(width: 50, height: 50)
+                
                 // Label
                 VStack {
                     Text(article.title ?? "").font(Font.system(size: 14, weight: .regular))
