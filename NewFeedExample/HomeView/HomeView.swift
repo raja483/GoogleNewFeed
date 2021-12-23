@@ -11,7 +11,6 @@ struct HomeView: View {
     
    @ObservedObject var viewModel: HomeViewModel
     
-    
     init(viewModel: HomeViewModel) {
         
         self.viewModel = viewModel
@@ -19,17 +18,22 @@ struct HomeView: View {
     }
     
     var body: some View {
-        
-        NavigationView {
-            
-            List(self.viewModel.newFeed?.articles ?? [], id: \.title){ article in
+        ZStack {
+            NavigationView {
                 
-                NewFeedListRow(article: article)
+                List(self.viewModel.newFeed?.articles ?? [], id: \.title){ article in
+                    
+                    NavigationLink(destination: DetailsView(article: article)) {
+                        NewFeedListRow(article: article)
+                    }
+                }
+                .listStyle(.plain)
+                .navigationTitle("Google News")
+                
             }
-            .listStyle(.plain)
-            .navigationTitle("Google News")
+            
+            LoadingIndicatorView().isHidden(self.viewModel.hideProgressView)
         }
-        
     }
 }
 

@@ -35,7 +35,6 @@ struct NewFeedListRow: View {
                     Text(article.title ?? "").font(Font.system(size: 14, weight: .regular))
                 }
                 Spacer()
-                Image(systemName: "arrow.forward").frame(width: 20, height: 20)
             }
         }
     }
