@@ -23,7 +23,7 @@
 
 /* Begin PBXFileReference section */
 		1A1258AD2770B442003A250D /* NewFeedListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFeedListRow.swift; sourceTree = "<group>"; };
-		1A691267276E3A6300643957 /* NewFeedExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewFeedExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A691267276E3A6300643957 /* GoogleNewsFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleNewsFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A69126A276E3A6300643957 /* NewFeedExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFeedExampleApp.swift; sourceTree = "<group>"; };
 		1A69126C276E3A6300643957 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1A69126E276E3A6500643957 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 		1A691268276E3A6300643957 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A691267276E3A6300643957 /* NewFeedExample.app */,
+				1A691267276E3A6300643957 /* GoogleNewsFeed.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,9 +126,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A691266276E3A6300643957 /* NewFeedExample */ = {
+		1A691266276E3A6300643957 /* GoogleNewsFeed */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A691275276E3A6500643957 /* Build configuration list for PBXNativeTarget "NewFeedExample" */;
+			buildConfigurationList = 1A691275276E3A6500643957 /* Build configuration list for PBXNativeTarget "GoogleNewsFeed" */;
 			buildPhases = (
 				1A691263276E3A6300643957 /* Sources */,
 				1A691264276E3A6300643957 /* Frameworks */,
@@ -138,9 +138,9 @@
 			);
 			dependencies = (
 			);
-			name = NewFeedExample;
+			name = GoogleNewsFeed;
 			productName = NewFeedExample;
-			productReference = 1A691267276E3A6300643957 /* NewFeedExample.app */;
+			productReference = 1A691267276E3A6300643957 /* GoogleNewsFeed.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -158,7 +158,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1A691262276E3A6300643957 /* Build configuration list for PBXProject "NewFeedExample" */;
+			buildConfigurationList = 1A691262276E3A6300643957 /* Build configuration list for PBXProject "GoogleNewsFeed" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -171,7 +171,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1A691266276E3A6300643957 /* NewFeedExample */,
+				1A691266276E3A6300643957 /* GoogleNewsFeed */,
 			);
 		};
 /* End PBXProject section */
@@ -386,7 +386,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A691262276E3A6300643957 /* Build configuration list for PBXProject "NewFeedExample" */ = {
+		1A691262276E3A6300643957 /* Build configuration list for PBXProject "GoogleNewsFeed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A691273276E3A6500643957 /* Debug */,
@@ -395,7 +395,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A691275276E3A6500643957 /* Build configuration list for PBXNativeTarget "NewFeedExample" */ = {
+		1A691275276E3A6500643957 /* Build configuration list for PBXNativeTarget "GoogleNewsFeed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A691276276E3A6500643957 /* Debug */,
