@@ -12,6 +12,7 @@ class HomeViewModel: NSObject, ObservableObject {
     private let requestHandler = RequestHandler()
     
     @Published var newFeed: NewsFeed?
+    @Published var hideProgressView = false
     
     override init() {
         
@@ -30,6 +31,7 @@ class HomeViewModel: NSObject, ObservableObject {
                 case .success(let data):
                     
                     self?.newFeed = data
+                    self?.hideProgressView = true
                     break
                     
                 case .failure(let error):
@@ -42,37 +44,4 @@ class HomeViewModel: NSObject, ObservableObject {
         
     }
     
-}
-
-struct NewsFeed: Codable {
-    
-    let status: String?
-    let totalResults: Int?
-    let articles: [Article]?
-}
-
-struct Article: Codable {
-    
-    let source: Source?
-    let author: String?
-    let title: String?
-    let description: String?
-    let url: String?
-    let urlToImage: String?
-    let publishedAt: String?
-    let content: String?
-    
-    var imageUrl: URL? {
-        
-        guard let url = URL(string: self.urlToImage ?? "") else{
-            return nil
-        }
-        
-        return url
-    }
-}
-
-struct Source: Codable {
-    let id: String?
-    let name: String?
 }

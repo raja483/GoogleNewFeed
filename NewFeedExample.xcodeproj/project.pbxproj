@@ -13,7 +13,12 @@
 		1A69126F276E3A6500643957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A69126E276E3A6500643957 /* Assets.xcassets */; };
 		1A691272276E3A6500643957 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A691271276E3A6500643957 /* Preview Assets.xcassets */; };
 		1A691279276E3BC100643957 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A691278276E3BC100643957 /* RequestHandler.swift */; };
+		1AD5B3EB2774C3E000155647 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5B3EA2774C3E000155647 /* ViewExtension.swift */; };
+		1AD5B3ED2774C4B500155647 /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5B3EC2774C4B500155647 /* LoadingIndicatorView.swift */; };
+		1AD5B3F12774EF5100155647 /* NewsFeedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5B3F02774EF5100155647 /* NewsFeedDataModel.swift */; };
 		1AD6D914276EFFAE00EE0E99 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD6D913276EFFAE00EE0E99 /* HomeViewModel.swift */; };
+		1AFB6A2C2771AFEE000AD2DA /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB6A2B2771AFEE000AD2DA /* DetailsView.swift */; };
+		1AFB6A2E2771C395000AD2DA /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB6A2D2771C395000AD2DA /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +29,12 @@
 		1A69126E276E3A6500643957 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A691271276E3A6500643957 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1A691278276E3BC100643957 /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
+		1AD5B3EA2774C3E000155647 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		1AD5B3EC2774C4B500155647 /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
+		1AD5B3F02774EF5100155647 /* NewsFeedDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedDataModel.swift; sourceTree = "<group>"; };
 		1AD6D913276EFFAE00EE0E99 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1AFB6A2B2771AFEE000AD2DA /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		1AFB6A2D2771C395000AD2DA /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +78,11 @@
 			isa = PBXGroup;
 			children = (
 				1A69126A276E3A6300643957 /* NewFeedExampleApp.swift */,
-				1A1258AF2770B458003A250D /* HomeView */,
 				1A691278276E3BC100643957 /* RequestHandler.swift */,
+				1AD5B3F22774EF5600155647 /* Data Models */,
+				1A1258AF2770B458003A250D /* HomeView */,
+				1AD5B3EE2774EEE200155647 /* DeatilView */,
+				1AD5B3EF2774EEF600155647 /* CommonView+Extensions */,
 				1A69126E276E3A6500643957 /* Assets.xcassets */,
 				1A691270276E3A6500643957 /* Preview Content */,
 			);
@@ -82,6 +95,32 @@
 				1A691271276E3A6500643957 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1AD5B3EE2774EEE200155647 /* DeatilView */ = {
+			isa = PBXGroup;
+			children = (
+				1AFB6A2B2771AFEE000AD2DA /* DetailsView.swift */,
+				1AFB6A2D2771C395000AD2DA /* WebView.swift */,
+			);
+			path = DeatilView;
+			sourceTree = "<group>";
+		};
+		1AD5B3EF2774EEF600155647 /* CommonView+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1AD5B3EA2774C3E000155647 /* ViewExtension.swift */,
+				1AD5B3EC2774C4B500155647 /* LoadingIndicatorView.swift */,
+			);
+			path = "CommonView+Extensions";
+			sourceTree = "<group>";
+		};
+		1AD5B3F22774EF5600155647 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				1AD5B3F02774EF5100155647 /* NewsFeedDataModel.swift */,
+			);
+			path = "Data Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,11 +193,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AD5B3F12774EF5100155647 /* NewsFeedDataModel.swift in Sources */,
 				1A69126D276E3A6300643957 /* HomeView.swift in Sources */,
 				1A1258AE2770B442003A250D /* NewFeedListRow.swift in Sources */,
 				1AD6D914276EFFAE00EE0E99 /* HomeViewModel.swift in Sources */,
+				1AD5B3ED2774C4B500155647 /* LoadingIndicatorView.swift in Sources */,
 				1A69126B276E3A6300643957 /* NewFeedExampleApp.swift in Sources */,
 				1A691279276E3BC100643957 /* RequestHandler.swift in Sources */,
+				1AFB6A2C2771AFEE000AD2DA /* DetailsView.swift in Sources */,
+				1AD5B3EB2774C3E000155647 /* ViewExtension.swift in Sources */,
+				1AFB6A2E2771C395000AD2DA /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +335,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"NewFeedExample/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -319,6 +364,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"NewFeedExample/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
